@@ -1,13 +1,12 @@
 //import NavItem from './NavItem.jsx'
+import { NavLink } from 'react-router'
 
-const Navbar = ({ children }) => {
+const Navbar = () => {
   return (
     <nav>
-        <ul>
-            {children.forEach(element => {
-                return element
-            })}
-        </ul>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
     </nav>
   )
 }
