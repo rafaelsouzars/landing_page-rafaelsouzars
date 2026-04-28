@@ -1,5 +1,6 @@
 //import { useState } from 'react'
 //import { reactLogo, viteLogo, heroImg } from './assets/index.jsx'
+import { Card } from './components'
 import './App.css'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <section id="center">
-       
+        <Card>Card</Card>
       </section>
 
       <div className="ticks"></div>
@@ -17,8 +18,10 @@ function App() {
         
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      {/*<div className="ticks"></div>*/}
+      <section id="spacer">
+
+      </section>
     </>
   )
 }
