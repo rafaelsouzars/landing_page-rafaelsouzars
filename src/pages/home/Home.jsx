@@ -1,8 +1,9 @@
 //import React from 'react'
+import './Home.css'
 
 const Home = () => {
   return (
-    <section>
+    <section className="home-section">
         <article>
             Home
         </article>

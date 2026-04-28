@@ -1,9 +1,9 @@
 //import React from 'react'
 import Card from './Card.jsx'
 
-const CardProfile = () => {
+const CardProfile = ({ children }) => {
   return (
-    <Card></Card>
+    <Card>{ children }</Card>
   )
 }
 

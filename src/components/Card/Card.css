@@ -1,0 +1,9 @@
+/* Card.css */
+
+.card {
+    box-sizing: border-box;
+    border: solid 1px yellow;
+    border-radius: 10px;
+    width: 90%;
+    min-height: 300px;
+}
