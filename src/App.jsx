@@ -13,33 +13,33 @@ function App() {
     <>   
     {/* Uso de HTML Semântico */}
     <BrowserRouter>
-      <header>
-        <div className='header'>
-        {/* Aqui vai o link envolvendo a logo */}
-        <Link className='dev-logo' to="/"><img src={heroImg} alt="My logo" width="80px" height="40px"/></Link>        
+      <header className='header-content'>        
+        {/* Aqui vai o link envolvendo a logo */}              
         <Navbar className='navbar'>
-          <NavLink to="/" className='nav-item'>Home</NavLink>
-          <NavLink to="/projects" className='nav-item'>Projects</NavLink>
-          <NavLink to="/blog" className='nav-item'>Blog</NavLink>
-        </Navbar>
-        </div>
+          <Link className='dev-logo' to="/"><img src={heroImg} alt="My logo" width="80px" height="40px"/></Link>
+          <div className='navbar-menu'> 
+            <NavLink to="/" className='nav-item'>Home</NavLink>
+            <NavLink to="/projects" className='nav-item'>Projects</NavLink>
+            <NavLink to="/blog" className='nav-item'>Blog</NavLink>
+          </div> 
+        </Navbar>        
       </header>
 
-      <div className='main-content'>
-      <aside>
-        <CardProfile>Profile</CardProfile>
-      </aside>
+      <div className='content'>
+        <aside className='aside-content'>
+          <CardProfile>Profile</CardProfile>
+        </aside>
 
-      <main>        
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/blog" element={<Blog/>} />            
-        </Routes>        
-      </main>      
+        <main className='main-content'>        
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/projects" element={<Projects/>} />
+            <Route path="/blog" element={<Blog/>} />            
+          </Routes>        
+        </main>      
       </div>
 
-      <footer>
+      <footer className='footer-content'>
         <div>Footer</div>
       </footer>      
     </BrowserRouter>   

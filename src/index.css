@@ -1,0 +1,29 @@
+:root {
+    --bg-color: white;
+    --font-color: black;
+    --btn-active-color: blue;
+    --btn-deactive-color: gray;
+    --btn-font-color: white;
+    --card-bg-color: white;
+    --shadow-color: gray;
+
+    --navbar-height: 80px;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;    
+}
+
+#root {
+    position: absolute;       
+    width: 100%;
+    height: 100dvh;
+    padding: 0 10%;
+    display: grid;
+    grid-template: "header" ".content" "footer" / 100%; 
+    row-gap: 10px; 
+    box-sizing: border-box;
+           
+}
