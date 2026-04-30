@@ -13,10 +13,10 @@ function App() {
     <>   
     {/* Uso de HTML Semântico */}
     <BrowserRouter>
-      <header className='header-content'>        
+      <header className='header card sticky'>        
         {/* Aqui vai o link envolvendo a logo */}              
         <Navbar className='navbar'>
-          <Link className='dev-logo' to="/"><img src={heroImg} alt="My logo" width="80px" height="40px"/></Link>
+          <Link className='logo' to="/"><img src={heroImg} alt="My logo"/></Link>
           <div className='navbar-menu'> 
             <NavLink to="/" className='nav-item'>Home</NavLink>
             <NavLink to="/projects" className='nav-item'>Projects</NavLink>
@@ -25,22 +25,22 @@ function App() {
         </Navbar>        
       </header>
 
-      <div className='content'>
-        <aside className='aside-content'>
-          <CardProfile>Profile</CardProfile>
+      
+        <aside className='aside card sticky-aside'>
+          <CardProfile></CardProfile>
         </aside>
 
-        <main className='main-content'>        
+        <main className='main card'>        
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/blog" element={<Blog/>} />            
           </Routes>        
         </main>      
-      </div>
+      
 
-      <footer className='footer-content'>
-        <div>Footer</div>
+      <footer className='footer card'>
+        <div>© Rafael Souza 2026</div>
       </footer>      
     </BrowserRouter>   
     {/*

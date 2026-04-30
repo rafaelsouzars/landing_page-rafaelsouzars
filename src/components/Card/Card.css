@@ -1,1 +1,46 @@
 /* Card.css */
+
+.profile {
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    /*border: solid 1px black;*/
+    display: grid;
+    grid-template: 
+    "figure" 1fr
+    "caption" 1fr
+    "release" 1fr
+    "contact" 1fr
+     / 1fr;
+     gap: 2px;
+     box-sizing: border-box;   
+}
+
+.figure {  
+    grid-area: figure;    
+    background-color:aqua;    
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    /*padding: 5px; */  
+    border-radius: 10%;
+    object-fit: cover;
+    box-sizing: border-box;    
+}
+
+.caption, .release, .contact { 
+    background-color: yellow;   
+    text-align: center;    
+}
+
+.release {
+    grid-area: release;
+}
+
+.contact {
+    grid-area: contact;
+}
