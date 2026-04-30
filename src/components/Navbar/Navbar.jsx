@@ -1,12 +1,9 @@
 //import NavItem from './NavItem.jsx'
-import { NavLink } from 'react-router'
 
-const Navbar = () => {
+const Navbar = ({ className, children }) => {
   return (
-    <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
+    <nav className={className}>
+        { children }
     </nav>
   )
 }
