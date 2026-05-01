@@ -1,0 +1,55 @@
+/* Button.css */
+
+.primary-button , .secondary-button {
+    font-size: .7rem;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.primary-button {
+    background-color: var(--btn-primary-color);
+    color: var(--btn-primary-font-color);    
+    border: none;        
+    transition: background-color 0.2s ease-in, transform 0.2s ease-in-out;
+}
+
+.primary-button:active {
+    background-color: lightskyblue;
+    transform: scale(.95, .95);
+}
+
+.primary-button:hover {
+    background-color: lightskyblue;
+}
+
+.primary-button:disabled {
+    background-color: var(--btn-secondary-color);
+    color: var(--btn-secondary-font-color);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.secondary-button {
+    background-color: var(--bg-color);
+    color: black;    
+    border: solid 1px lightgray;        
+    transition: background-color 0.2s ease-in, transform 0.2s ease-in-out;
+}
+
+.secondary-button:active {
+    background-color: var(--btn-secondary-color);
+    transform: scale(.95, .95);
+}
+
+.secondary-button:hover {
+    background-color: var(--btn-secondary-color);
+}
+
+.secondary-button:disabled {
+    background-color: var(--btn-secondary-color);
+    color: var(--btn-secondary-font-color);
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

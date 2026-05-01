@@ -1,19 +1,22 @@
 /* Card.css */
 
+
+
+/* CardProfile structure */
 .profile {
     position: relative;
     width: auto;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
     /*border: solid 1px black;*/
     display: grid;
     grid-template: 
     "figure" 1fr
-    "caption" 1fr
-    "release" 1fr
-    "contact" 1fr
+    "caption" .5fr
+    "release" 2fr
+    "contact" .5fr
      / 1fr;
-     gap: 2px;
+     gap: 10px;
      box-sizing: border-box;   
 }
 
@@ -30,11 +33,6 @@
     border-radius: 10%;
     object-fit: cover;
     box-sizing: border-box;    
-}
-
-.caption, .release, .contact { 
-    background-color: yellow;   
-    text-align: center;    
 }
 
 .release {
