@@ -30,6 +30,6 @@
     "header header" auto 
     "aside main" auto 
     "footer footer" auto 
-    / 0.5fr 1.5fr; 
+    / 250px 1.5fr; /* minmax(250px, auto) */
     gap: 10px;          
 }

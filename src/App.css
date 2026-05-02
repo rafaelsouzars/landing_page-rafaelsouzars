@@ -24,7 +24,7 @@
 }
 
 .highlight {
-    color: var(--font-primary-color);
+    color: var(--font-primary-color);    
 }
 
 .font-size {
@@ -68,7 +68,8 @@ header {
 }
 
 .navbar { 
-    width: auto;   
+    width: auto;  
+    padding: 5px 0; 
     display: flex;
     justify-content: space-between; 
     align-items: center;     
@@ -77,13 +78,14 @@ header {
 }
 
 .logo {
-    background-color: none;
+    background-color: none;    
     margin-left: 20px;   
 }
 
-.logo > img {
-    height: 50px;
-    aspect-ratio: 16 / 9;
+.logo > img {  
+    width: auto;
+    height: 35px;  
+    object-fit: contain;     
 }
 
 .navbar-menu { 
@@ -112,8 +114,8 @@ header {
 }
 
 .aside {  
-    grid-area: aside;   
-    height: 420px;   
+    grid-area: aside;       
+    height: 480px;   
 }
 
 .main {

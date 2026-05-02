@@ -1,20 +1,18 @@
 /* Card.css */
 
-
-
 /* CardProfile structure */
-.profile {
-    position: relative;
+.profile {    
     width: auto;
     height: 100%;
     padding: 20px;
     /*border: solid 1px black;*/
     display: grid;
     grid-template: 
-    "figure" 1fr
+    "figure" .5fr
     "caption" .5fr
-    "release" 2fr
+    "release" 1fr
     "contact" .5fr
+    "social" .5fr
      / 1fr;
      gap: 10px;
      box-sizing: border-box;   
@@ -41,4 +39,15 @@
 
 .contact {
     grid-area: contact;
+}
+
+.social {
+    grid-area: social;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social > *:nth-child(n) {
+    margin-right: 5px;
 }

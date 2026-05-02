@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 //import { reactLogo, viteLogo, heroImg } from './assets/index.jsx'
-import { heroImg } from './assets/index.jsx'
+import { logoDev } from './assets/index.jsx'
 import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router'
 import { Navbar, CardProfile } from './components/index.jsx'
 import { Home, Projects, Blog } from './pages/index.jsx'
@@ -16,7 +16,7 @@ function App() {
       <header className='header card sticky'>        
         {/* Aqui vai o link envolvendo a logo */}              
         <Navbar className='navbar'>
-          <Link className='logo' to="/"><img src={heroImg} alt="My logo"/></Link>
+          <Link className='logo' to="/"><img src={logoDev} alt="My logo"/></Link>
           <div className='navbar-menu'> 
             <NavLink to="/" className='nav-item'>Home</NavLink>
             <NavLink to="/projects" className='nav-item'>Projects</NavLink>
