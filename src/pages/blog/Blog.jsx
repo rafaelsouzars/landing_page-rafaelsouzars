@@ -2,9 +2,14 @@
 
 const Blog = () => {
   return (
-    <section>
-        <article>
-            Blog
+    <section className="section">
+        <article className="section__article section__article--color">
+          <p>
+            <img src='https://img.shields.io/badge/my-blog-white'/>
+          </p>
+          <p className='blog__text--justify'>
+            Em construção...
+          </p> 
         </article>
     </section>
   )

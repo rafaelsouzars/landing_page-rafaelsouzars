@@ -1,0 +1,65 @@
+/* CardProfile.css */
+
+/* CardProfile structure */
+.profile {    
+    width: auto;
+    min-height: 100%;
+    padding: 20px;
+    /*border: solid 1px black;*/
+    display: grid;
+    /*grid-template: 
+    "figure" 1fr
+    "caption" .5fr
+    "release" .5fr
+    "contact" .5fr
+    "social" .5fr
+     / 1fr;*/
+     grid-template-areas: 
+        "figure"
+        "caption"
+        "release"
+        "contact"
+        "social";
+    grid-template-rows: 1fr auto auto auto auto;
+    gap: 5px;
+    box-sizing: border-box;      
+}
+
+.figure {  
+    grid-area: figure;          
+}
+
+.photo {
+    /*position: relative;*/
+    width: 100%;
+    aspect-ratio: 1 / 1;    
+    /*padding: 5px; */  
+    border-radius: 10%;
+    object-fit:contain;
+    box-sizing: border-box;    
+}
+
+.caption {
+    grid-area: caption;
+}
+
+.release {
+    grid-area: release;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.social {    
+    grid-area: social;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social > *:nth-child(n) {
+    margin-right: 5px;
+}
+
+/* Animations */

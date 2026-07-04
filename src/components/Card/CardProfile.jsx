@@ -1,26 +1,41 @@
 //import React from 'react'
 //import Card from './Card.jsx'
 import profileImg from '../../assets/img/profile_photo.jpg'
-import './Card.css'
+import { Button, SocialButton } from '../index.jsx'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import './CardProfile.css'
 
 const CardProfile = ({ photo, children }) => {
   return (
-    <div className='profile'>
-      <figure>
+    <section className='profile'>
+      <figure className='figure'>
         <img className='photo' src={photo ?? profileImg} alt='Profile photo rafaelsouzars'/>
       </figure>
       <figcaption className='caption'>
         Rafael Souza
+        <p className='font-size'> Engenheiro de Software & Especialista em Automação</p>
       </figcaption>
       <div className='release'>
-        Release
+        <p className='font-size align-left secondary-text-color'>
+          Desenvolvedor especializado em
+          <span className='font-size highlight'> Web, Desktop, Browser Extensions, API, Scrapping e Engenharia Reversa</span>.
+          Gosto de participar de projetos desde o <span className='font-size highlight'>levantamento de requisitos</span> até o <span className='font-size highlight'>desenvolvimento</span>.
+        </p>
       </div>
       <div className='contact'>
-        Contact
+        <Button className='secondary-button'>Contate-me</Button>        
+      </div>
+      <div className='social'>
+        <SocialButton to='https://github.com/rafaelsouzars'>
+          <FaGithub/>
+        </SocialButton>
+        <SocialButton to='https://linkedin.com/in/rafaelsouzars'>
+          <FaLinkedin/>
+        </SocialButton>        
       </div>
       
       {children}
-    </div>
+    </section>
   )
 }
 
